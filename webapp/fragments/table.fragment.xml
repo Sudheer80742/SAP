@@ -1,0 +1,71 @@
+<core:FragmentDefinition
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core"
+>
+    <Dialog id="clos">
+        <VBox alignItems="End">
+            <SearchField search="onSearchEmp" />
+        </VBox>
+        <VBox alignItems="End">
+            <Button
+                icon="sap-icon://decline"
+                press="onClotab"
+            />
+        </VBox>
+        <Table
+            items="{
+            path:'/Emp',
+            sorter:{
+                path:'id',
+                group:true
+            }
+        }"
+            id="nameTable"
+        >
+            <headerToolbar>
+                <Toolbar>
+                    <Title text="Table Data" />
+                    <ToolbarSpacer />
+                    <Button
+                        icon="sap-icon://add"
+                        press="onAdd"
+                    />
+                </Toolbar>
+            </headerToolbar>
+            <columns>
+                <Column>
+                    <Text text="Id" />
+                </Column>
+                <Column>
+                    <Text text="Name" />
+                </Column>
+                <Column>
+                    <Text text="Salary" />
+                </Column>
+                <Column />
+            </columns>
+            <items>
+                <ColumnListItem>
+                    <cells>
+                        <Text text="{id}" />
+                        <Text text="{name}" />
+                        <Text text="{salary}" />
+                        <HBox class="sapUiResponsiveMargin">
+                            <Button
+                                icon="sap-icon://edit"
+                                type="Transparent"
+                                press="onEditItem"
+                            />
+                            <ToolbarSpacer />
+                            <Button
+                                icon="sap-icon://delete"
+                                type="Reject"
+                                press="onDeleteItem"
+                            />
+                        </HBox>
+                    </cells>
+                </ColumnListItem>
+            </items>
+        </Table>
+    </Dialog>
+</core:FragmentDefinition>

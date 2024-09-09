@@ -1,0 +1,8 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core">
+<VBox>
+<Label text="UserName"/>
+<Input placeholder="Enter Username" id="uname"/>
+<Input type="Password" id="pword" placeholder="Enter Password:"/>
+<!-- <Button text="Login" press="onLogin"/> -->
+</VBox>
+</core:FragmentDefinition>

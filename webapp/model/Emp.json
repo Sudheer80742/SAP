@@ -1,0 +1,24 @@
+{
+    "Emp": [
+        {
+            "name": "select",
+            "id": "",
+            "salary": ""
+        },
+        {
+            "name": "Sudheer",
+            "id": 101,
+            "salary": 10000
+        },
+        {
+            "name": "Tirumala",
+            "id": 102,
+            "salary": 15000
+        },
+        {
+            "name": "Vanitha",
+            "id": 57,
+            "salary": 70000
+        }
+    ]
+}
